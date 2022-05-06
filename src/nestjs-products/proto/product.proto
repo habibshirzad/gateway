@@ -1,0 +1,25 @@
+syntax = "proto3";
+package products;
+
+service ProductService {
+    rpc AddProduct (CreateProductDto) returns (Product) {}
+    rpc GetAllProducts (GetAllProductsParams) returns (ProductResponse) {}
+
+}
+
+message CreateProductDto {
+    string productName = 1;
+    string productPrice = 2;
+}
+
+message Product {
+    int32 id = 1;
+    string productName = 2;
+    string productPrice = 3;
+}
+
+message GetAllProductsParams {}
+
+message ProductResponse {
+    repeated Product data = 1;
+}

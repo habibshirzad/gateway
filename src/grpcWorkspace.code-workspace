@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../nestjs-email-subscriptions"
+		},
+		{
+			"path": "../../nestjs-products"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/*.js": true,
+			"**/*.map": true
+		}
+	}
+}
